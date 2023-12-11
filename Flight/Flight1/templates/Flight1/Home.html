@@ -1,0 +1,63 @@
+{% extends 'Flight1/homelayout.html' %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+	{% block head %}	
+<head>
+	
+	
+	<title>Weeboo | Homepage</title>
+
+    
+</head>
+{% endblock head %}
+ {% block body %} 
+<body>
+	<br />
+	<h3 align="center">
+        <img id="nav_logo" src="https://www.bambooairways.com/o/wpbav-content-theme/css/assets/logo.png" alt="bamboo_airways_logo">
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		{% if not user.is_authenticated %}
+		<font face="Lato" size="4">
+            <!-- <a class="menutpl_text d-inline-block " href="https://www.bambooairways.com/vn/en/explore" id="menutpl0" temp="menutplcollapse0">
+                Explore 
+              </a> -->
+			<a href="#">Explore</a>&nbsp;&nbsp;&nbsp;&nbsp;
+			<a href="#">Booking</a>&nbsp;&nbsp;&nbsp;&nbsp;
+			<a href="#">Travel Info</a>&nbsp;&nbsp;&nbsp;&nbsp;
+			<a href="#">Login</a>&nbsp;&nbsp;&nbsp;&nbsp;
+		</font>
+		{% else %}
+		<!-- <a class="menutpl_text d-inline-block " href="https://www.bambooairways.com/vn/en/explore" id="menutpl0" temp="menutplcollapse0">
+                Explore 
+              </a> -->
+			  <a href="#">Explore</a>&nbsp;&nbsp;&nbsp;&nbsp;
+			  <a href="#">Booking</a>&nbsp;&nbsp;&nbsp;&nbsp;
+			  <a href="#">Travel Info</a>&nbsp;&nbsp;&nbsp;&nbsp;
+			  <a href="#">Logout</a>&nbsp;&nbsp;&nbsp;&nbsp;
+		{% endif %}
+	</h3>
+	<br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+	<h1 align="center">
+		<font face="Lato" color="#017bf5" size="7">
+			BAMBOO AIRWAYS
+		</font>
+	</h1>
+	<h3 align="center">
+		<font face="Lato" color="#000" size="5">
+			FLIGHT TICKET MANAGEMENT WEBSITE
+		</font>
+	</h3>
+	<br />
+	<h3 align="center">
+	</a>&nbsp;&nbsp;&nbsp;&nbsp;
+	</a>
+	</h3>
+</body>
+</html>
+{% endblock %}

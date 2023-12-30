@@ -72,4 +72,8 @@ body{
     justify-content: center;
 }
 
+img {
+    border-radius: 8px;
+}
+
 
